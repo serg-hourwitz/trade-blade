@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+
+	<title>Trade blade</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" sizes="192x192" href="./img/favicon.ico" />
+
+	<!-- reset css -->
+	<link rel="stylesheet" href="css/reset.css" />
+
+	<!-- libs css -->
+	<link rel="stylesheet" href="libs/aos/aos.css" />
+
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+
+	<!-- main css -->
+	<link rel="stylesheet" href="css/main.css" />
+
+	<!-- jQeury -->
+	<script defer="defer" src="libs/jquery.min.js"></script>
+
+	<!-- preloader -->
+	<script defer="defer" src="js/preloader.js"></script>
+
+	<!-- libs js -->
+	<script defer="defer" src="libs/aos/aos.js"></script>
+	<script defer="defer" src="libs/multi-animated-counter.js"></script>
+
+	<script defer="defer" src="libs/swiper/swiper-bundle.min.js"></script>
+
+	<!-- main js -->
+	<script defer="defer" src="js/main.js"></script>
+
+	<!-- Meta Pixel Code -->
+	<!-- End Meta Pixel Code -->
+</head>
+
+<body>
+	<div id="myModal" class="modal">
+		<!-- * Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Мы получили вашу заявку, наш менеджер свяжется с вами и ответит на ваши вопросы</p>
+		</div>
+	</div>
+
+	<div class="preloader">
+		<div class="loader"></div>
+	</div>
+	<!-- * Header -->
+	<div class="overflow-hidden">
+		<header class="header" id="header" data-aos="fade-down" data-aos-delay="1600">
+			<div class="container">
+				<div class="header__container">
+					<a href="#footer" title="logo" class="header__logo">
+						<img src="img/logo.svg" alt="logo" title="logo" /></a>
+
+					<button class="header__hamburger-close toggleMenu"></button>
+					<!-- * navigation -->
+					<nav class="header__menu">
+						<a href="#stats" class="header__menu-item trigger-move" title="Цифры">Цифры</a>
+						<a href="#deals" class="header__menu-item trigger-move" title="Сделки онлайн">Сделки онлайн</a>
+						<a href="#about" class="header__menu-item trigger-move" title="О компании">О компании</a>
+						<a href="#" class="header__menu-item trigger-move" title="Как начать">
+							Как начать
+						</a>
+
+						<a href="#tariffs" class="header__menu-item trigger-move" title="Тарифы">Тарифы</a>
+						<a href="#" class="header__menu-item trigger-move" title="Отзывы">Отзывы</a>
+						<a href="#faq" class="header__menu-item trigger-move" title="FAQ">FAQ</a>
+					</nav>
+
+					<div class="header__btn-wrapper">
+						<a href="https://platform.tradeblade.io/login" class="header__btn btn _secondary"
+							title="Вход"><span>Вход</span></a>
+
+						<a href="https://platform.tradeblade.io/register?" class="header__btn btn"
+							title="Регистрация"><span>Регистрация</span></a>
+					</div>
+				</div>
+
+				<div class="header__container-mobile">
+					<a href="#footer">
+						<img class="header__logo" src="img/logo.svg" alt="logo" title="logo" />
+					</a>
+
+					<button class="header__hamburger toggleMenu"></button>
+				</div>
+			</div>
+		</header>
+		<!-- * Main -->
+		<section class="main">
+			<div class="container main__container">
+				<div class="main__container-inner">
+					<h1 class="main__title" data-aos="fade-right" data-aos-delay="1600">
+						Моментально копируй сделки профи трейдеров
+					</h1>
+
+					<p class="main__text" data-aos="fade-right" data-aos-delay="1700">
+						Начни копировать сделки с успешной командой профессиональных
+						трейдеров в автоматическом режиме.
+					</p>
+
+					<form class="main__form submit-form" data-aos="fade-right" data-aos-delay="1800">
+						<input class="main__form-input" type="text" name="telegram" placeholder="Ваш E-MAIL" required />
+
+						<input type="hidden" name="query-string" value="" />
+
+						<button type="submit" class="main__form-submit btn">
+							<span>Начать</span>
+						</button>
+					</form>
+
+					<p class="main__notice" data-aos="fade-right" data-aos-delay="1900">
+						5 дней бесплатного пользования
+					</p>
+				</div>
+
+				<img src="img/main__image.png" alt="img" class="main__image" title="img" data-aos="zoom-in"
+					data-aos-delay="1800" />
+			</div>
+		</section>
+
+		<!-- * Statistics -->
+		<section class="stats rect _bg-white" id="stats">
+			<div class="container stats__container">
+				<div class="stats__container-inner" data-aos="fade-right">
+					<h2 class="stats__title title">Цифры</h2>
+					<p class="stats__date">Cентябрь 2022</p>
+				</div>
+
+				<div class="stats__info" id="counters">
+					<div class="stats__info-item" data-aos="fade-right" data-aos-delay="100">
+						<p class="stats__info-caption">
+							Торговой <br />
+							прибыли
+						</p>
+						<p class="stats__info-number">
+							<span data-TargetNum="2756" class="counter">2756</span>%
+						</p>
+					</div>
+
+					<div class="stats__info-item" data-aos="fade-right" data-aos-delay="200">
+						<p class="stats__info-caption">
+							фьючерсных <br />
+							и спотовых сделок
+						</p>
+						<p class="stats__info-number">
+							<span data-TargetNum="67" class="counter">67</span>
+						</p>
+					</div>
+
+					<div class="stats__info-item" data-aos="fade-right" data-aos-delay="300">
+						<p class="stats__info-caption">
+							прибыль <br />
+							подписчиков
+						</p>
+						<p class="stats__info-number">
+							<span class="counter" data-TargetNum="375000">375000</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- * Deals -->
+		<section class="deals" id="deals">
+			<div class="container">
+				<h2 class="deals__title title _white" data-aos="fade-right">
+					Прошедшие сделки
+				</h2>
+				<p class="deals__subtitle" data-aos="fade-right">
+					Онлайн
+				</p>
+
+				<div class="deals__slider" data-aos="fade-left">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide deals__item">
+							<div class="deals__item-inner">
+								<p class="deals__item-title">NEAR/USDT</p>
+								<p class="deals__item-subtitle">SPOT · 1 мин. назад</p>
+							</div>
+
+							<div class="deals__item-inner">
+								<p class="deals__item-heading">Прибыль</p>
+								<div class="deals__item-number">58.6206%</div>
+
+								<div class="deals__item-bottom">
+									<span class="deals__item-caption">Цель 4</span>
+									<span class="deals__item-date">Дата входа 06.10.2022</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide deals__item">
+							<div class="deals__item-inner">
+								<p class="deals__item-title">BTC/USDT</p>
+								<p class="deals__item-subtitle">SPOT · 1 мин. назад</p>
+							</div>
+
+							<div class="deals__item-inner">
+								<p class="deals__item-heading">Прибыль</p>
+								<div class="deals__item-number">6.02%</div>
+
+								<div class="deals__item-bottom">
+									<span class="deals__item-caption">Цель 3</span>
+									<span class="deals__item-date">Дата входа 06.10.2022</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide deals__item">
+							<div class="deals__item-inner">
+								<p class="deals__item-title">ETH/USDT</p>
+								<p class="deals__item-subtitle">SPOT · 1 мин. назад</p>
+							</div>
+
+							<div class="deals__item-inner">
+								<p class="deals__item-heading">Прибыль</p>
+								<div class="deals__item-number">16.3%</div>
+
+								<div class="deals__item-bottom">
+									<span class="deals__item-caption">Цель 4</span>
+									<span class="deals__item-date">Дата входа 06.10.2022</span>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide deals__item">
+							<div class="deals__item-inner">
+								<p class="deals__item-title">NEAR/USDT</p>
+								<p class="deals__item-subtitle">SPOT · 1 мин. назад</p>
+							</div>
+
+							<div class="deals__item-inner">
+								<p class="deals__item-heading">Прибыль</p>
+								<div class="deals__item-number">0.963%</div>
+
+								<div class="deals__item-bottom">
+									<span class="deals__item-caption">Цель 4</span>
+									<span class="deals__item-date">Дата входа 06.10.2022</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- * About -->
+		<section class="about rect _bg-white" id="about">
+			<div class="container about__container">
+				<div class="about__container-inner" data-aos="fade-right">
+					<h2 class="about__title title">О компании</h2>
+
+					<div class="about__text">
+						<p class="about__text-p">
+							Мы опытная команда, для которой трейдинг – профессия. TradeBlade
+							является авторизованным официальным брокером биржи Binance.
+						</p>
+
+						<p class="about__text-p">
+							Он представляет пользователям множество преимуществ, таких как
+							более високая скорость синхронизации API и возможность создать
+							учетную запись Binance через платформу TradeBlade всего в 1
+							клик.
+						</p>
+					</div>
+				</div>
+
+				<div class="about__container-form">
+					<h3 class="about__form-title" data-aos="zoom-in">
+						Попробуйте сейчас и получите <br />
+						5 дней бесплатного пользования
+					</h3>
+
+					<form class="about__form submit-form" data-aos="zoom-in">
+						<input class="about__form-input" type="text" name="telegram" placeholder="Ваш E-MAIL" required />
+
+						<input type="hidden" name="query-string" value="" />
+
+						<button type="submit" class="about__form-submit btn">
+							<span>Попробовать</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- * Tarrifs -->
+		<section class="tariffs" id="tariffs">
+			<div class="container tariffs__container">
+				<h2 class="tariffs__title title _white" data-aos="fade-right">
+					Тарифы
+				</h2>
+
+				<div class="tariffs__tabs" data-aos="fade-left">
+					<div class="tariffs__tabs-choose">
+						<button class="tariffs__tabs-btn active">Спот</button>
+						<button class="tariffs__tabs-btn">Фьючерс</button>
+					</div>
+
+					<div class="tariffs__tabs-content active">
+						<div class="tariffs__item">
+							<div class="tariffs__item-inner">
+								<h3 class="tariffs__item-title">Standart</h3>
+
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-li">Ручной трейдинг</li>
+									<li class="tariffs__item-li">
+										Автоматическое или полуавтоматическое копирование сделок
+									</li>
+									<li class="tariffs__item-li">
+										Личный кабинет со статистикой
+									</li>
+									<li class="tariffs__item-li">
+										Среднесрочные сделки с уровнями набора портфеля
+									</li>
+								</ul>
+							</div>
+
+							<div class="tariffs__item-inner">
+								<div class="tariffs__item-flexbox">
+									<div class="tariffs__item-price">$30</div>
+
+									<div class="tariffs__item-terms">
+										<div class="tariffs__item-terms-heading">1 месяц</div>
+										<div class="tariffs__item-terms-dropdown">
+											<div class="tariffs__item-terms-item" data-value="$30" data-discount="0">
+												1 месяц
+											</div>
+											<div class="tariffs__item-terms-item" data-value="$153" data-discount="-15">
+												6 месяцев
+											</div>
+											<div class="tariffs__item-terms-item" data-value="$234" data-discount="-35">
+												12 месяцев
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<a href="https://platform.tradeblade.io/register?" class="tariffs__item-btn btn" title="Попробовать">
+									Попробовать
+									<span>5 дней бесплатно</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="tariffs__item _bg-purple">
+							<div class="tariffs__item-inner">
+								<h3 class="tariffs__item-title">Vip</h3>
+
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-li">Ручной трейдинг</li>
+									<li class="tariffs__item-li">
+										Автоматическое или полуавтоматическое копирование сделок
+									</li>
+									<li class="tariffs__item-li">
+										Личный кабинет со статистикой
+									</li>
+									<li class="tariffs__item-li">
+										Краткосрочные, среднесрочные и инвест сделки
+									</li>
+									<li class="tariffs__item-li">
+										Доступ в Vip чат с командой
+									</li>
+									<li class="tariffs__item-li">
+										Наш авторский курс по трейдингу
+									</li>
+								</ul>
+							</div>
+
+							<div class="tariffs__item-inner">
+								<div class="tariffs__item-flexbox">
+									<div class="tariffs__item-price">$30</div>
+									<div class="tariffs__item-terms">
+										<div class="tariffs__item-terms-heading">12 месяцев</div>
+										<div class="tariffs__item-terms-dropdown">
+											<div class="tariffs__item-terms-item" data-value="$30" data-discount="0">
+												1 месяц
+											</div>
+											<div class="tariffs__item-terms-item" data-value="$153" data-discount="-15">
+												6 месяцев
+											</div>
+											<div class="tariffs__item-terms-item" data-value="$585" data-discount="-35">
+												12 месяцев
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<a href="https://platform.tradeblade.io/register?" class="tariffs__item-btn btn" title="Попробовать">
+									Попробовать
+									<span>5 дней бесплатно</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="tariffs__tabs-content">
+						<div class="tariffs__item">
+							<div class="tariffs__item-inner">
+								<h3 class="tariffs__item-title">Standart</h3>
+
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-li">Ручной трейдинг</li>
+									<li class="tariffs__item-li">
+										Автоматическое или полуавтоматическое копирование сделок
+									</li>
+									<li class="tariffs__item-li">
+										Личный кабинет со статистикой
+									</li>
+									<li class="tariffs__item-li">
+										Среднесрочные сделки с уровнями набора портфеля
+									</li>
+									<li class="tariffs__item-li">
+										Доступ в Vip чат с командой
+									</li>
+									<li class="tariffs__item-li">
+										Наш авторский курс по трейдингу
+									</li>
+								</ul>
+							</div>
+
+							<div class="tariffs__item-inner">
+								<div class="tariffs__item-flexbox">
+									<div class="tariffs__item-price">$30</div>
+									<div class="tariffs__item-terms">
+										<div class="tariffs__item-terms-heading">12 месяцев</div>
+										<div class="tariffs__item-terms-dropdown">
+											<div class="tariffs__item-terms-item" data-value="$30" data-discount="0">
+												1 месяц
+											</div>
+											<div class="tariffs__item-terms-item" data-value="$153" data-discount="-15">
+												6 месяцев
+											</div>
+											<div class="tariffs__item-terms-item" data-value="$252" data-discount="-30">
+												12 месяцев
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<a href="https://platform.tradeblade.io/register?" class="tariffs__item-btn btn" title="Попробовать">
+									Попробовать
+									<span>5 дней бесплатно</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="tariffs__item _bg-purple">
+							<div class="tariffs__item-inner">
+								<h3 class="tariffs__item-title">Vip</h3>
+
+								<ul class="tariffs__item-list">
+									<li class="tariffs__item-li">Ручной трейдинг</li>
+									<li class="tariffs__item-li">
+										Автоматическое или полуавтоматическое копирование сделок
+									</li>
+									<li class="tariffs__item-li">
+										Личный кабинет со статистикой
+									</li>
+									<li class="tariffs__item-li">
+										Краткосрочные, среднесрочные и инвест сделки
+									</li>
+								</ul>
+							</div>
+
+							<div class="tariffs__item-inner">
+								<div class="tariffs__item-flexbox">
+									<div class="tariffs__item-price">$30</div>
+									<div class="tariffs__item-terms">
+										<div class="tariffs__item-terms-heading">12 месяцев</div>
+										<div class="tariffs__item-terms-dropdown">
+											<div class="tariffs__item-terms-item" data-value="$30" data-discount="0">
+												1 месяц
+											</div>
+											<div class="tariffs__item-terms-item" data-value="$153" data-discount="-15">
+												6 месяцев
+											</div>
+											<div class="tariffs__item-terms-item" data-value="$252" data-discount="-30">
+												12 месяцев
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<a href="https://platform.tradeblade.io/register?" class="tariffs__item-btn btn" title="Попробовать">
+									Попробовать
+									<span>5 дней бесплатно</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- * FAQ -->
+		<section class="faq _bg-white" id="faq">
+			<div class="container faq__container">
+				<h2 class="faq__title title" data-aos="fade-right">
+					Часто задаваемые вопросы
+				</h2>
+
+				<div class="faq__items" data-aos="fade-up">
+					<div class="faq__item">
+						<div class="faq__item-heading dropdown-toggle">
+							Что такое TradeBlade
+							<i class="faq__item-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g>
+										<path
+											d="M12 15.5L11.505 15.995C11.6363 16.1263 11.8143 16.2 12 16.2C12.1857 16.2 12.3637 16.1263 12.495 15.995L12 15.5ZM6.49497 9.00503C6.22161 8.73166 5.77839 8.73166 5.50502 9.00503C5.23166 9.27839 5.23166 9.72161 5.50502 9.99498L6.49497 9.00503ZM18.495 9.99497C18.7683 9.72161 18.7683 9.27839 18.495 9.00503C18.2216 8.73166 17.7784 8.73166 17.505 9.00503L18.495 9.99497ZM12.495 15.005L6.49497 9.00503L5.50502 9.99498L11.505 15.995L12.495 15.005ZM12.495 15.995L18.495 9.99497L17.505 9.00503L11.505 15.005L12.495 15.995Z"
+											fill="#030718" />
+									</g>
+								</svg>
+							</i>
+						</div>
+						<div class="faq__item-dropdown">
+							<p class="faq__item-p">
+								Мы опытная команда, для которой трейдинг – профессия.
+								TradeBlade является авторизованным официальным брокером биржи
+								Binance.
+							</p>
+
+							<p class="faq__item-p">
+								Он представляет пользователям множество преимуществ, таких как
+								более високая скорость синхронизации API и возможность создать
+								учетную запись Binance через платформу TradeBlade всего в 1
+								клик.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq__item">
+						<div class="faq__item-heading dropdown-toggle">
+							Что TradeBlade предлагает инвесторам
+							<i class="faq__item-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g>
+										<path
+											d="M12 15.5L11.505 15.995C11.6363 16.1263 11.8143 16.2 12 16.2C12.1857 16.2 12.3637 16.1263 12.495 15.995L12 15.5ZM6.49497 9.00503C6.22161 8.73166 5.77839 8.73166 5.50502 9.00503C5.23166 9.27839 5.23166 9.72161 5.50502 9.99498L6.49497 9.00503ZM18.495 9.99497C18.7683 9.72161 18.7683 9.27839 18.495 9.00503C18.2216 8.73166 17.7784 8.73166 17.505 9.00503L18.495 9.99497ZM12.495 15.005L6.49497 9.00503L5.50502 9.99498L11.505 15.995L12.495 15.005ZM12.495 15.995L18.495 9.99497L17.505 9.00503L11.505 15.005L12.495 15.995Z"
+											fill="#030718" />
+									</g>
+								</svg>
+							</i>
+						</div>
+						<div class="faq__item-dropdown">
+							<p class="faq__item-p">
+								Мы опытная команда, для которой трейдинг – профессия.
+								TradeBlade является авторизованным официальным брокером биржи
+								Binance.
+							</p>
+
+							<p class="faq__item-p">
+								Он представляет пользователям множество преимуществ, таких как
+								более високая скорость синхронизации API и возможность создать
+								учетную запись Binance через платформу TradeBlade всего в 1
+								клик.
+							</p>
+						</div>
+					</div>
+
+					<div class="faq__item">
+						<div class="faq__item-heading dropdown-toggle">
+							Должен ли я перевести свои средства на TradeBlade
+							<i class="faq__item-arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g>
+										<path
+											d="M12 15.5L11.505 15.995C11.6363 16.1263 11.8143 16.2 12 16.2C12.1857 16.2 12.3637 16.1263 12.495 15.995L12 15.5ZM6.49497 9.00503C6.22161 8.73166 5.77839 8.73166 5.50502 9.00503C5.23166 9.27839 5.23166 9.72161 5.50502 9.99498L6.49497 9.00503ZM18.495 9.99497C18.7683 9.72161 18.7683 9.27839 18.495 9.00503C18.2216 8.73166 17.7784 8.73166 17.505 9.00503L18.495 9.99497ZM12.495 15.005L6.49497 9.00503L5.50502 9.99498L11.505 15.995L12.495 15.005ZM12.495 15.995L18.495 9.99497L17.505 9.00503L11.505 15.005L12.495 15.995Z"
+											fill="#030718" />
+									</g>
+								</svg>
+							</i>
+						</div>
+						<div class="faq__item-dropdown">
+							<p class="faq__item-p">
+								Мы опытная команда, для которой трейдинг – профессия.
+								TradeBlade является авторизованным официальным брокером биржи
+								Binance.
+							</p>
+
+							<p class="faq__item-p">
+								Он представляет пользователям множество преимуществ, таких как
+								более високая скорость синхронизации API и возможность создать
+								учетную запись Binance через платформу TradeBlade всего в 1
+								клик.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- * Footer -->
+		<footer class="footer" id="footer">
+			<div class="container footer__container">
+				<div class="footer__container-inner">
+					<h4 class="footer__heading">Быстрая навигация</h4>
+					<!--* Footer navigation  -->
+					<nav class="footer__menu">
+						<a href="#stats" class="footer__menu-item trigger-move" title="Цифры">Цифры</a>
+						<a href="#deals" class="footer__menu-item trigger-move" title="Сделки онлайн">Сделки онлайн</a>
+						<a href="#about" class="footer__menu-item trigger-move" title="О компании">О компании</a>
+						<a href="index.html#usage" class="footer__menu-item trigger-move" title="Как начать">
+							tradeblad это
+						</a>
+						<a href="#tariffs" class="footer__menu-item trigger-move" title="Тарифы">Тарифы</a>
+						<a href="#faq" class="footer__menu-item trigger-move" title="FAQ">FAQ</a>
+					</nav>
+				</div>
+
+				<div class="footer__container-inner">
+					<a href="#header" class="footer__logo" title="logo">
+						<img src="img/logo.svg" alt="logo" title="logo" />
+					</a>
+
+					<span class="footer__copyrights">
+						© 2022 TradeBlade. All rights reserved
+					</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
