@@ -19,7 +19,7 @@ if ($(window).width() <= 992) {
 // Swiper
 const dealsSlider = new Swiper('.deals__slider', {
   slidesPerView: 'auto',
-  spaceBetween: 12,
+  spaceBetween: 20,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
